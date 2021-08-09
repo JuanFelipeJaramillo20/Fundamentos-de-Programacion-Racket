@@ -1,0 +1,7 @@
+k1 chocolate 1000 36
+k12 Chao 200 200
+k13 Chococono 1700 30
+k14 Jugo_hit 1900 20
+k15 Fosforos 2300 46
+k16 Donas 1000 51
+k17 Pan 500 90

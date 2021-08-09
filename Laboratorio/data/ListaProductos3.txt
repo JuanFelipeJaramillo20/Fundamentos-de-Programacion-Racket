@@ -1,0 +1,7 @@
+012 docena_huevo 10390 10
+024 Filete_pechuga 14900 23
+023 sobrebarriga 8000 17
+026 banano 2900 60
+070 piña 4500 2
+0123 Vino_tinto 439000 5
+01 papel_higienico 20000 50

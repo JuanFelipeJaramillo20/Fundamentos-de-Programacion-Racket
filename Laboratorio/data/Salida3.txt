@@ -1,0 +1,6 @@
+i vino 70000 40
+a vino_tinto 150000 30
+w avena 1000 15
+u Yogurt 1500 37
+d vino 70000 40
+e escoba 10500 22

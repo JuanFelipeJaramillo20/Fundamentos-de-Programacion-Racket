@@ -1,0 +1,6 @@
+20 Azúcar 2300 20
+21 Leche 3900 40
+22 Lentejas 3100 24
+19 Aguacate 1700 30
+17 Toallas_higienicas 12000 40
+16 Esmalte 5500 31

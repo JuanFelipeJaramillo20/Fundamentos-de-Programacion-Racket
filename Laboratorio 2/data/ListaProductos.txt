@@ -1,0 +1,4 @@
+'p1 'panela 1000 10
+'p2 'papas  2000 30
+'p3 'canela 4000 20
+'p4 'chorizo 2300 100

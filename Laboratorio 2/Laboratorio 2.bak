@@ -1,0 +1,30 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-intermediate-reader.ss" "lang")((modname |Laboratorio 2|) (read-case-sensitive #t) (teachpacks ((lib "guess.rkt" "teachpack" "htdp") (lib "draw.rkt" "teachpack" "htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "guess.rkt" "teachpack" "htdp") (lib "draw.rkt" "teachpack" "htdp")) #f)))
+(define-struct producto (codigo nombre disponibilidad))
+(define-struct disponibilidad (precio unidades-disponibles))
+(define-struct producto-consultado (nombre precio unidades-disponibles))
+
+(define (consultar lista-productos codigo-producto)
+  (cond
+    [ (empty? lista-productos) (error "El producto no se encuentra en la lista.") ]
+    [ (symbol=? codigo-producto (producto-codigo (first lista-productos))) (make-producto-consultado
+                                                                            (producto-nombre (first lista-productos))
+                                                                            (disponibilidad-precio (producto-disponibilidad (first lista-productos)))
+                                                                            (disponibilidad-unidades-disponibles (producto-disponibilidad (first lista-productos)))
+                                                                            ) ]
+    [else (consultar (rest lista-productos) codigo-producto)]
+    )
+  )
+
+(define producto1 (make-producto 'a 'prueba1 (make-disponibilidad 10000 10)))
+(define producto2 (make-producto 'b 'prueba2 (make-disponibilidad 20000 20)))
+(define producto3 (make-producto 'c 'prueba3 (make-disponibilidad 30000 30)))
+(define lista (list producto1 producto2 producto3))
+(consultar lista 'a)
+(consultar lista 'b)
+(consultar lista 'c)
+
+(define (cargar-productos lista-productos)
+  ()
+  )
